@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MealViewController.swift
 //  FoodTrack
 //
 //  Created by Johanna Sörbom on 2017-07-21.
@@ -8,12 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate,
+class MealViewController: UIViewController, UITextFieldDelegate,
     UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     //MARK: Properties
     @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var mealNameLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
     
@@ -40,7 +39,10 @@ class ViewController: UIViewController, UITextFieldDelegate,
         // Dismiss the picker.
         dismiss(animated: true, completion: nil)
     }
-    
+  
+    //MARK: Method
+    func textFieldDidEndEditing(_ textField: UITextField) {
+            }
     
     //MARK: Action
     
