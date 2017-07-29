@@ -25,14 +25,11 @@ class MealTableViewController: UITableViewController {
         if let savedMeals = loadMeals() {
             meals += savedMeals
         }
-        
         else {
             // Load the sample data.
             loadSampleMeals()
         }
-
-        // Load the sample data.
-        loadSampleMeals()    }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
