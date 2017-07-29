@@ -57,7 +57,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Your Meals" id="48U-7r-em7">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="uZJ-Wp-h1V"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="uZJ-Wp-h1V">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="RvC-jt-r87"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ber-wW-8gI" userLabel="First Responder" sceneMemberID="firstResponder"/>
